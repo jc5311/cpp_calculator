@@ -1,9 +1,13 @@
-#include "calculator.hpp"
 
-int main (int argc, char** argv)
+#include "mainwindow.h"
+
+#include <QApplication>
+
+
+int main(int argc, char *argv[])
 {
-    Calculator calc;
-    calc.run();
-
-    return 0;
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
 }
